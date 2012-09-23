@@ -25,7 +25,7 @@
     <orderEntry type="library" scope="PROVIDED" name="annotate (v2.4.1.beta1, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v3.0.2, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt-ruby (v3.0.1, ruby-1.9.3-p125) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v2.0.0, ruby-1.9.3-p125) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v2.0.4.0, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.0.3, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.2.0, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capybara (v1.1.2, ruby-1.9.3-p125) [gem]" level="application" />
@@ -38,6 +38,7 @@
     <orderEntry type="library" scope="PROVIDED" name="execjs (v1.4.0, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="factory_girl (v2.3.2, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="factory_girl_rails (v1.4.0, ruby-1.9.3-p125) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faker (v1.0.1, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.1.5, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="guard (v1.3.2, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="guard-rspec (v0.5.5, ruby-1.9.3-p125) [gem]" level="application" />
