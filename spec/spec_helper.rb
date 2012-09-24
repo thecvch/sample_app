@@ -44,5 +44,6 @@ end
 
 # in spec/spec_helper.rb
 Spork.each_run do
-  SampleApp::Application.reload_routes!
+  load "#{Rails.root}/config/routes.rb"
+  Dir["#{Rails.root}/app/**/*.rb"].each { |f| load f }
 end
