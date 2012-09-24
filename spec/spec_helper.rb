@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'spork'
 
+
 Spork.prefork do
   # Loading more in this block will cause your tests to run faster. However, 
   # if you change any configuration or code from libraries loaded here, you'll
@@ -40,7 +41,8 @@ Spork.prefork do
   end
 end
 
-Spork.each_run do
-  # This code will be run each time you run your specs.
 
+# in spec/spec_helper.rb
+Spork.each_run do
+  SampleApp::Application.reload_routes!
 end
