@@ -1,7 +1,12 @@
 SampleApp::Application.routes.draw do
-  resources :users
-  resources :sessions,   only: [:new, :create, :destroy]
-  resources :microposts, only: [:create, :destroy]
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
+  resources :sessions,      only: [:new, :create, :destroy]
+  resources :microposts,    only: [:create, :destroy]
+  resources :relationships, only: [:create, :destroy]
   root to: 'static_pages#home'
 
 
@@ -17,13 +22,13 @@ SampleApp::Application.routes.draw do
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
-  # Keep in mind you can assign values other than :controller and :action
+  # Keep in mind you can assign values other than :controllers and :action
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
 
-  # Sample resource route (maps HTTP verbs to controller actions automatically):
+  # Sample resource route (maps HTTP verbs to controllers actions automatically):
   #   resources :products
 
   # Sample resource route with options:
@@ -65,7 +70,7 @@ SampleApp::Application.routes.draw do
 
   # See how all your routes lay out with "rake routes"
 
-  # This is a legacy wild controller route that's not recommended for RESTful applications.
-  # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id))(.:format)'
+  # This is a legacy wild controllers route that's not recommended for RESTful applications.
+  # Note: This route will make all actions in every controllers accessible via GET requests.
+  # match ':controllers(/:action(/:id))(.:format)'
 end
